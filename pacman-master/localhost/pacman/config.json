@@ -1,0 +1,92 @@
+{
+  "canvas": {
+    "width": 810,
+    "height": 810,
+    "center": true,
+    "renderScale": {
+      "mode": "fit", 
+      "margin": 1.0, 
+      "fixed": 1.0       
+    }
+  },
+
+  "background": {
+    "type": "gradient-vertical", 
+    "colors": {
+      "top": "#1E0032",
+      "bottom": "#C800FF"
+    },
+    "neonOverlay": {
+      "enabled": true,
+      "lineAlpha": 80,
+      "lineStep": 40,
+      "strokeWeight": 2,
+      "angle": -45
+    }
+  },
+
+  "hud": {
+    "textColor": "#FFFFFF",
+    "scoreSize": 20,
+    "livesSize": 20,
+    "levelSize": 20,
+    "gameOver": {
+      "enabled": true,
+      "title": "GAME OVER",
+      "subtitle": "Presiona '1' o '2' para jugar de nuevo",
+      "titleSize": 64,
+      "subtitleSize": 28,
+      "titleColor": "#FFD700",
+      "subtitleColor": "#FFFFFF",
+      "box": {
+        "enabled": true,
+        "width": 500,
+        "height": 200,
+        "cornerRadius": 20,
+        "fill": "rgba(0,0,0,0.70)",
+        "stroke": "#FFD700",
+        "strokeWeight": 4,
+        "yOffset": -40
+      }
+    }
+  },
+
+  "colors": {
+    "wallsPalette": ["#1919A6", "#E75480", "#228B22", "#B22222", "#D3D3D3", "#FFFDD0", "#FFD700"],
+    "pellet": "#FFB8AE",
+    "powerPellet": "#FFFFFF",
+    "ghosts": ["red", "pink", "blue", "orange"],
+    "pacman1": "yellow",
+    "pacman2": "red"
+  },
+
+  "gameplay": {
+    "pacman": {
+      "speed": 3,
+      "lives": 3,
+      "extraLifeEvery": 400
+    },
+    "ghosts": {
+      "speedByLevel": [1.5, 2, 2, 2.5, 2.5, 2.5, 3],
+      "scaredBaseMs": 5500,
+      "scaredDecrementPerLevel": 500,
+      "scaredMinMs": 500
+    }
+  },
+
+  "audio": {
+    "intro_volume": 0.3,
+    "chomp_volume": 0.05,
+    "death_volume": 0.3,
+    "eatGhost_volume": 0.3,
+    "powerPellet_volume": 0.3,
+    "congrats_volume": 0.4,
+    "boom_volume": 0.3
+  },
+
+  "dino": {
+    "enabled": true,
+    "color": "#5DC33C",
+    "sizeFactor": 0.8
+  }
+}
